@@ -58,11 +58,18 @@ h1 {
 .front-face {
   transform: rotateY(180deg);
 }
-.card:hover .front-face {
+.card.clicked .front-face,
+.card.matched .front-face {
   transform: rotateY(0deg);
 }
-.card:hover .back-face {
+.card.clicked .back-face,
+.card.matchedd .back-face {
   transform: rotateY(-180deg);
+}
+.time {
+  position: fixed;
+  top: 15px;
+  right: 15px;
 }
 
 @media all and (min-width: 768px) {
